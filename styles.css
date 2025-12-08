@@ -12,3 +12,14 @@ header .iconify {
   width: 28px;
   height: 28px;
 }
+/* Make only the NAV logo SVG smaller */
+header svg {
+  width: 28px;
+  height: 28px;
+}
+
+/* Keep other SVGs unchanged */
+svg {
+  width: auto;
+  height: auto;
+}
