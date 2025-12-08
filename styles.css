@@ -1,0 +1,13 @@
+/* Material Symbols Settings */
+.material-symbols-outlined {
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24;
+}
+
+/* Default SVG width */
+svg {
+  width: 40px;
+}
