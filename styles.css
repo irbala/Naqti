@@ -7,7 +7,15 @@
     'opsz' 24;
 }
 
-/* Default SVG width */
-svg {
-  width: 40px;
+/* Make only the NAV logo SVG smaller */
+header svg {
+  width: 28px;
+  height: 28px;
 }
+
+/* Keep other SVGs unchanged */
+svg {
+  width: auto;
+  height: auto;
+}
+
