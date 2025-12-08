@@ -7,15 +7,8 @@
     'opsz' 24;
 }
 
-/* Make only the NAV logo SVG smaller */
-header svg {
+/* Only resize the NAV logo SVG — not all SVGs */
+header .iconify {
   width: 28px;
   height: 28px;
 }
-
-/* Keep other SVGs unchanged */
-svg {
-  width: auto;
-  height: auto;
-}
-
