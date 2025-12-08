@@ -7,16 +7,14 @@
     'opsz' 24;
 }
 
-/* Only resize the NAV logo SVG — not all SVGs */
+/* ONLY target the big camel logo in the header */
 header .iconify {
-  width: 28px;
-  height: 28px;
+  width: 32px !important;
+  height: 32px !important;
 }
-/* Make only the NAV logo SVG smaller */
-header svg {
-  width: 28px;
-  height: 28px;
-}
+
+/* DO NOT use global svg rules — removed to prevent layout breaking */
+
 
 /* Keep other SVGs unchanged */
 svg {
