@@ -5,8 +5,8 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
   <title>Naqti - Find Your Perfect Camel</title>
 
-  <!-- Tailwind -->
-  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <!-- Tailwind (compiled, see README) -->
+  <link rel="stylesheet" href="tailwind.css"/>
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet"/>
@@ -15,34 +15,6 @@
   <!-- External CSS -->
   <link rel="stylesheet" href="styles.css"/>
 
-  <!-- Tailwind Config -->
-  <script id="tailwind-config">
-    tailwind.config = {
-      darkMode: "class",
-      theme: {
-        extend: {
-          colors: {
-            "primary": "#3B82F6",
-            "background-light": "#F5EFE6",
-            "background-dark": "#101922",
-            "sky-blue": "#87CEEB",
-            "sand-beige": "#F5EFE6",
-            "brand-blue": "#2563EB",
-            "brand-orange": "#F97316",
-          },
-          fontFamily: {
-            "display": ["Inter", "sans-serif"]
-          },
-          borderRadius: {
-            "DEFAULT": "0.25rem",
-            "lg": "0.5rem",
-            "xl": "0.75rem",
-            "full": "9999px"
-          },
-        },
-      },
-    }
-  </script>
 </head>
 
 <body class="bg-sand-beige dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">
@@ -51,7 +23,6 @@
 <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-black/10 dark:border-b-white/10 px-4 sm:px-8 md:px-16 lg:px-24 xl:px-40 py-3 bg-sand-beige/80 dark:bg-background-dark/80 backdrop-blur-sm sticky top-0 z-50">
 <div class="flex items-center gap-3 text-black dark:text-white">
 <div class="text-brand-orange">
-<?xml version="1.0" encoding="utf-8"?>
 <!-- License: MIT. Made by joypixels: https://github.com/joypixels/emojione -->
 <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--emojione" preserveAspectRatio="xMidYMid meet">
 
@@ -152,7 +123,7 @@
 <span class="truncate">List a Camel</span>
 </button>
 </div>
-<button class="md:hidden text-black dark:text-white">
+<button class="md:hidden text-black dark:text-white" aria-label="Menu">
 <span class="material-symbols-outlined">menu</span>
 </button>
 </header>
@@ -171,7 +142,7 @@
 <div class="text-gray-500 dark:text-gray-400 flex border-none bg-white dark:bg-background-dark/50 items-center justify-center pl-4 rounded-l-lg border-r-0">
 <span class="material-symbols-outlined">search</span>
 </div>
-<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-r-lg text-black dark:text-white focus:outline-0 focus:ring-2 focus:ring-inset focus:ring-brand-blue border-none bg-white dark:bg-background-dark/50 h-full placeholder:text-gray-500 dark:placeholder:text-gray-400 px-4 pl-2 text-base font-normal leading-normal" placeholder="Search by name, breed, or location..." value=""/>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-r-lg text-black dark:text-white focus:outline-0 focus:ring-2 focus:ring-inset focus:ring-brand-blue border-none bg-white dark:bg-background-dark/50 h-full placeholder:text-gray-500 dark:placeholder:text-gray-400 px-4 pl-2 text-base font-normal leading-normal" aria-label="Search camels" placeholder="Search by name, breed, or location..." value=""/>
 </div>
 </label>
 </div>
@@ -196,7 +167,7 @@
 </div>
 <div class="grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-8 p-4">
 <div class="flex flex-col gap-4 bg-white dark:bg-background-dark/50 rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-shadow duration-300 group">
-<div class="w-full h-64 bg-center bg-no-repeat bg-cover group-hover:scale-105 transition-transform duration-300" data-alt="A swift-looking dromedary camel named Zahra" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD6Ncqdz_dzUdanJdZ4KrQtA6JLOFJPcwqdqtJFU9xUeQ46uIP45Es90nNKXW8RwXWRYKYMjWKceaHN_5IQRlt2UFrqSEj0f7GVmLAYM3gISyuKhE-EsEIylpJE2mGDmp9WwSxjy4nhku79vK_8Anj5e0gJybPatDm942eAi4lSJkTf_FnNap7Gzs5pyi7qBOy1wn6tzOL2aG2rNWd7ZCh_BNLNbgG0jwiZxB0Kw6YLPjBwMeNL92YpOj4dTFmfKUcVKiaexaq1IvI");'></div>
+<img src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6Ncqdz_dzUdanJdZ4KrQtA6JLOFJPcwqdqtJFU9xUeQ46uIP45Es90nNKXW8RwXWRYKYMjWKceaHN_5IQRlt2UFrqSEj0f7GVmLAYM3gISyuKhE-EsEIylpJE2mGDmp9WwSxjy4nhku79vK_8Anj5e0gJybPatDm942eAi4lSJkTf_FnNap7Gzs5pyi7qBOy1wn6tzOL2aG2rNWd7ZCh_BNLNbgG0jwiZxB0Kw6YLPjBwMeNL92YpOj4dTFmfKUcVKiaexaq1IvI" alt="A swift-looking racing dromedary camel named Zahra" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"/>
 <div class="p-5 flex flex-col flex-grow">
 <h3 class="text-black dark:text-white text-xl font-bold leading-normal">Zahra - زهرة</h3>
 <p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal mt-1">Prized Racing Dromedary</p>
@@ -207,7 +178,7 @@
 </div>
 </div>
 <div class="flex flex-col gap-4 bg-white dark:bg-background-dark/50 rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-shadow duration-300 group">
-<div class="w-full h-64 bg-center bg-no-repeat bg-cover group-hover:scale-105 transition-transform duration-300" data-alt="A strong Bactrian camel named Kael" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBULagf_VQIfVe62B970Qp6v4cSDxnoWVi_z7ZOzUvYSnBfM7s3AKabYLhSkHcz4I0o-QjF63BEC1_YSXmEcYbWoBDZbYcFOEu2AZU8xEa1loQXVdl0BzjDOjeA8kpagqDWiabbbMXOiNtaoTsOtshGqwmKtvekYjG1j1CYgG3DNn5DoL34QbLSwcnsv4zKXm7EG3QG5xFdLMYUFlE1iVZGNfXA17UKeiM_ATL7WBIZXZSgYtqJOD5ayQ0USKZM9eh1Xz-xrafg-hg");'></div>
+<img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBULagf_VQIfVe62B970Qp6v4cSDxnoWVi_z7ZOzUvYSnBfM7s3AKabYLhSkHcz4I0o-QjF63BEC1_YSXmEcYbWoBDZbYcFOEu2AZU8xEa1loQXVdl0BzjDOjeA8kpagqDWiabbbMXOiNtaoTsOtshGqwmKtvekYjG1j1CYgG3DNn5DoL34QbLSwcnsv4zKXm7EG3QG5xFdLMYUFlE1iVZGNfXA17UKeiM_ATL7WBIZXZSgYtqJOD5ayQ0USKZM9eh1Xz-xrafg-hg" alt="A strong camel built for cargo, named Fahad" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"/>
 <div class="p-5 flex flex-col flex-grow">
 <h3 class="text-black dark:text-white text-xl font-bold leading-normal">Fahad - فهد</h3>
 <p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal mt-1">Built for cargo</p>
@@ -218,7 +189,7 @@
 </div>
 </div>
 <div class="flex flex-col gap-4 bg-white dark:bg-background-dark/50 rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-shadow duration-300 group">
-<div class="w-full h-64 bg-center bg-no-repeat bg-cover group-hover:scale-105 transition-transform duration-300" data-alt="An award-winning show camel, Sultan of the Sands" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB_yCh9CBzbIDrhdrR41La6WmkqoM5203EadkP0x0Sdi8BQHDJFedUMA3Gt_aITnM-kgZb2X-c7xXCtvs7QCYHvHgvgHX2YMuUbFNYWDB52GsZEQqLD-fPwSu3EIJcxFJs3V32YUoi_LGfQHvEd194jAo1HiZeJpSIzWXqkUaKMMcMMa2z1UJZzndEZ9w9X-XIrZTZzpWviOD4F-bDduNb78ZNJBmhKSWHMvjwBfclPwhfLDTpl79o-c1zxvVhThrJJsHp5PykzrSw");'></div>
+<img src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_yCh9CBzbIDrhdrR41La6WmkqoM5203EadkP0x0Sdi8BQHDJFedUMA3Gt_aITnM-kgZb2X-c7xXCtvs7QCYHvHgvgHX2YMuUbFNYWDB52GsZEQqLD-fPwSu3EIJcxFJs3V32YUoi_LGfQHvEd194jAo1HiZeJpSIzWXqkUaKMMcMMa2z1UJZzndEZ9w9X-XIrZTZzpWviOD4F-bDduNb78ZNJBmhKSWHMvjwBfclPwhfLDTpl79o-c1zxvVhThrJJsHp5PykzrSw" alt="An award-winning show camel named Tarfa" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"/>
 <div class="p-5 flex flex-col flex-grow">
 <h3 class="text-black dark:text-white text-xl font-bold leading-normal">Tarfa - طرفه</h3>
 <p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal mt-1">Award-winning show camel</p>
@@ -229,9 +200,9 @@
 </div>
 </div>
 <div class="flex flex-col gap-4 bg-white dark:bg-background-dark/50 rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-shadow duration-300 group">
-<div class="w-full h-64 bg-center bg-no-repeat bg-cover group-hover:scale-105 transition-transform duration-300" data-alt="A graceful two-year-old Dromedary named Layla" style='background-image: url("https://previews.123rf.com/images/hlslaszlo/hlslaszlo1301/hlslaszlo130100032/17603106-camel-sitting-in-the-desert-abu-dhabi.jpg");'></div>
+<img src="https://previews.123rf.com/images/hlslaszlo/hlslaszlo1301/hlslaszlo130100032/17603106-camel-sitting-in-the-desert-abu-dhabi.jpg" alt="A beautiful five-year-old camel named Sultana" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"/>
 <div class="p-5 flex flex-col flex-grow">
-<h3 class="text-black dark:text-white text-xl font-bold leading-normal">Sultana - سلطانة</h3
+<h3 class="text-black dark:text-white text-xl font-bold leading-normal">Sultana - سلطانة</h3>
 <p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal mt-1">Five-year-old beautiful camel</p>
 <p class="text-brand-blue dark:text-brand-orange text-2xl font-bold leading-normal mt-4">16,000,000 SAR</p>
 <div class="mt-auto pt-4">
@@ -240,7 +211,7 @@
 </div>
 </div>
 <div class="flex flex-col gap-4 bg-white dark:bg-background-dark/50 rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-shadow duration-300 group">
-<div class="w-full h-64 bg-center bg-no-repeat bg-cover group-hover:scale-105 transition-transform duration-300" data-alt="A calm and steady pack camel named Omar" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD0UmDgREKKTV5eriKIUephit4wjsLXTSGrOej74CHbBWVV0r3uC6-k_8i77Eauw8d80Xh2xxDNCghkZuHWiT58CvpOaWdawyudd8DPTEjSpsc3NzGmVtxzjLRKA9k_FKZYMvbnFbL7ipkntZUevgaqmHF7LTq5QoZBGM0G99z4qtzsg58rD2KSIvMhmwIWB8Svzg5ivLDSDZlzbLSQGiQmEkRvt7Gut1acg0P_3SK1H7_bTzJ8fVMkxHrMvHX3ANBTLg6V-MwmEsI");'></div>
+<img src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0UmDgREKKTV5eriKIUephit4wjsLXTSGrOej74CHbBWVV0r3uC6-k_8i77Eauw8d80Xh2xxDNCghkZuHWiT58CvpOaWdawyudd8DPTEjSpsc3NzGmVtxzjLRKA9k_FKZYMvbnFbL7ipkntZUevgaqmHF7LTq5QoZBGM0G99z4qtzsg58rD2KSIvMhmwIWB8Svzg5ivLDSDZlzbLSQGiQmEkRvt7Gut1acg0P_3SK1H7_bTzJ8fVMkxHrMvHX3ANBTLg6V-MwmEsI" alt="A calm and steady pack camel named Omar" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"/>
 <div class="p-5 flex flex-col flex-grow">
 <h3 class="text-black dark:text-white text-xl font-bold leading-normal">Omar - عمر</h3>
 <p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal mt-1">Calm and steady pack camel</p>
@@ -251,7 +222,7 @@
 </div>
 </div>
 <div class="flex flex-col gap-4 bg-white dark:bg-background-dark/50 rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-shadow duration-300 group">
-<div class="w-full h-64 bg-center bg-no-repeat bg-cover group-hover:scale-105 transition-transform duration-300" data-alt="A top-tier racing dromedary" style='background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Camelus_dromedarius_in_Nuweiba.jpg/1200px-Camelus_dromedarius_in_Nuweiba.jpg");'></div>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Camelus_dromedarius_in_Nuweiba.jpg/1200px-Camelus_dromedarius_in_Nuweiba.jpg" alt="A top-tier racing dromedary named Mahnna" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"/>
 <div class="p-5 flex flex-col flex-grow">
 <h3 class="text-black dark:text-white text-xl font-bold leading-normal">Mahnna - مهنا</h3>
 <p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal mt-1">Top-tier racing dromedary</p>
@@ -326,7 +297,7 @@
 </div>
 </div>
 <div class="mt-12 pt-8 border-t border-solid border-black/10 dark:border-white/10 text-center text-sm text-gray-500 dark:text-gray-400">
-<p>© 2024 Naqti. All rights reserved.</p>
+<p>© 2025 Naqti. All rights reserved.</p>
 </div>
 </div>
 </footer>

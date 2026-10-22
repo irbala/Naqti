@@ -12,12 +12,3 @@ header .iconify {
   width: 32px !important;
   height: 32px !important;
 }
-
-/* DO NOT use global svg rules — removed to prevent layout breaking */
-
-
-/* Keep other SVGs unchanged */
-svg {
-  width: auto;
-  height: auto;
-}
