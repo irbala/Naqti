@@ -1,6 +1,6 @@
-# Naqti
+# Naqti (design concept)
 
-A camel marketplace concept: browse camels, filter by breed, age, price and location, and list your own camel.
+A camel marketplace design concept: browse camels, filter by breed, age, price and location, and list your own camel.
 
 Visit the site: https://irbala.github.io/Naqti/
 

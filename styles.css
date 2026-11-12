@@ -12,3 +12,9 @@ header .iconify {
   width: 32px !important;
   height: 32px !important;
 }
+
+/* Small note in the footer saying the page is a design concept */
+.concept-note {
+  margin-top: 8px;
+  font-style: italic;
+}
